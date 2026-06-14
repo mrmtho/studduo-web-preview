@@ -111188,12 +111188,17 @@ if(q==="calendar")s.sq4("calendar")
 else if(q==="create")s.sq4("library")},
 $S:0}
 A.aFr.prototype={
-$2(a,b){var s=this,r=b.b>=950,q=!r&&s.b.a!=="calendar"?new A.RE(s.a.Vg(s.b,s.c,s.d,s.e,s.f,!0),null):null,p=s.a,o=s.b,n=s.c,m=p.aiX(o,n),l=t.p,k=A.b([],l)
-if(r&&o.a!=="calendar")k.push(p.aib(o,n,s.d,s.e,s.f))
-if(r&&o.a!=="calendar")k.push(B.FW)
-p=p.a.d
-k.push(A.ai(p,1))
-return A.W4(null,B.ee,A.a7(A.b([m,A.ai(A.a1(k,B.l,B.h,B.f,0),1)],l),B.l,B.h,B.f),q)},
+$2(a,b){var s,r,q,p,o=this,n=b.b>=950,m=o.a,l=m.Q,k=l==="library"||l==="create",j=o.b,i=j.a==="calendar"||l==="calendar",h=n&&!k&&!i
+l=!n&&!k&&!i?new A.RE(m.Vg(j,o.c,o.d,o.e,o.f,!0),null):null
+s=o.c
+r=m.aiX(j,s)
+q=t.p
+p=A.b([],q)
+if(h)p.push(m.aib(j,s,o.d,o.e,o.f))
+if(h)p.push(B.FW)
+m=m.a.d
+p.push(A.ai(m,1))
+return A.W4(null,B.ee,A.a7(A.b([r,A.ai(A.a1(p,B.l,B.h,B.f,0),1)],q),B.l,B.h,B.f),l)},
 $S:732}
 A.aD5.prototype={
 $2(a,b){var s,r,q,p=null,o=this.a[b],n=A.a3(16),m=A.aV(A.l(8,B.c.j()>>>16&255,B.c.j()>>>8&255,B.c.j()&255),1),l=o.i(0,"image")
