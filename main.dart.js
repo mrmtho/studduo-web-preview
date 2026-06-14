@@ -112364,7 +112364,7 @@ m.toString
 s=B.e.cA(A.bo(m,n,t.w).w.a.a*0.08,36,120)
 r=B.e.cA(s*0.25,15,30)
 m=A.O("Capture the Soul\nof Your Songs",n,n,n,n,A.aH(n,n,B.c,n,n,n,n,n,"Outfit",n,n,s,n,n,B.im,n,1.1,!0,n,B.e.cA(s*-0.0125,-1.8,-0.4),n,n,n,n,n,n),B.e_,n,n)
-q=A.R(n,A.O("Capture raw ideas, outline song architectures, and define chord concepts. Perfect the essence of your music before entering full studio production.",n,n,n,n,A.aH(n,n,A.l(153,B.c.i()>>>16&255,B.c.i()>>>8&255,B.c.i()&255),n,n,n,n,n,n,n,n,r,n,n,n,n,1.6,!0,n,n,n,n,n,n,n,n),B.e_,n,n),B.i,n,B.HM,n,n,n,n,n,n,n,n)
+q=A.R(n,A.O("Capture raw ideas and secure the essence of your music before entering full studio production.",n,n,n,n,A.aH(n,n,A.l(153,B.c.i()>>>16&255,B.c.i()>>>8&255,B.c.i()&255),n,n,n,n,n,n,n,n,r,n,n,n,n,1.6,!0,n,n,n,n,n,n,n,n),B.e_,n,n),B.i,n,B.HM,n,n,n,n,n,n,n,n)
 p=A.ff(new A.aJs(this))
 o=A.a3(30)
 return A.a7(A.b([B.a5b,m,B.am,q,B.EV,p,B.bF,A.ht(B.aea,B.RL,this.gLR(),A.dG(n,n,B.L,n,n,n,8,n,n,B.c,n,n,B.OY,A.l(B.e.W(127.5),B.L.i()>>>16&255,B.L.i()>>>8&255,B.L.i()&255),new A.bT(o,B.o),n,n,n,n,n))],t.p),B.l,B.h,B.f)},
