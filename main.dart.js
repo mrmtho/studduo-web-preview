@@ -34728,21 +34728,22 @@ a.vs("      CREATE TABLE IF NOT EXISTS loop_regions (\n        song_memo_id TEXT
 a.vs("      CREATE TABLE IF NOT EXISTS custom_rhythm_styles (\n        id TEXT PRIMARY KEY,\n        song_memo_id TEXT,\n        name TEXT NOT NULL,\n        time_signature TEXT DEFAULT '4/4',\n        bpm_default INTEGER DEFAULT 120,\n        accent_pattern TEXT DEFAULT 'S,W,W,W',\n        created_at TEXT\n      );\n    ")
 return A.v(null,r)}})
 return A.w($async$b_e,r)},
-aaV(){var s=0,r=A.x(t.bK),q,p,o,n,m
+aaV(){var s=0,r=A.x(t.bK),q,p,o,n,m,l
 var $async$aaV=A.y(function(a,b){if(a===1)return A.u(b,r)
-for(;;)switch(s){case 0:s=3
-return A.r(A.azV(A.d7("sqlite3.wasm",0,null).l(0)),$async$aaV)
-case 3:n=b
+for(;;)switch(s){case 0:n=document.baseURI
+s=3
+return A.r(A.azV(A.d7(n==null?"":n,0,null).R("sqlite3.wasm").l(0)),$async$aaV)
+case 3:m=b
 s=4
 return A.r(A.Uj("studduo_db"),$async$aaV)
-case 4:m=b
-n.hp(0)
-p=n.a
+case 4:l=b
+m.hp(0)
+p=m.a
 p=p.a
-o=p.d.dart_sqlite3_register_vfs(p.Ff(B.cB.dY(m.a),1),m,1)
+o=p.d.dart_sqlite3_register_vfs(p.Ff(B.cB.dY(l.a),1),l,1)
 if(o===0)A.a7(A.ah("could not register vfs"))
-$.bdp().n(0,m,o)
-q=n.aMG(0,"/studduo.db")
+$.bdp().n(0,l,o)
+q=m.aMG(0,"/studduo.db")
 s=1
 break
 case 1:return A.v(q,r)}})
