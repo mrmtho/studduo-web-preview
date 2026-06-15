@@ -113175,7 +113175,7 @@ return A.r(A.ih(),$async$Bu)
 case 7:n=a1
 m=J.Qe(n,"SELECT id FROM song_memos WHERE id = ?",[f])
 if(J.ca(m)===0)n.kN("INSERT INTO song_memos (id, title, created_at, updated_at) VALUES (?, ?, ?, ?)",[f,"Untitled Song",new A.bl(Date.now(),0,!1).jv(),new A.bl(Date.now(),0,!1).jv()])
-n.kN("        INSERT OR REPLACE INTO audio_files (\n          id, song_memo_id, title, file_path, audio_blob, mime_type, \n          size_bytes, duration_ms, sourceType, waveform_data, created_at\n        ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)\n      ",[d,f,h,c,a,e,a.length,b,g,j,new A.bl(Date.now(),0,!1).jv()])
+n.kN("        INSERT OR REPLACE INTO audio_files (\n          id, song_memo_id, title, file_path, audio_blob, mime_type, \n          size_bytes, duration_ms, source_type, waveform_data, created_at\n        ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)\n      ",[d,f,h,c,a,e,a.length,b,g,j,new A.bl(Date.now(),0,!1).jv()])
 q=!0
 s=1
 break
@@ -113231,7 +113231,7 @@ s=p}for(;;)switch(s){case 0:p=4
 s=7
 return A.r(A.ih(),$async$Bd)
 case 7:n=c
-m=J.Qe(n,"        SELECT id, song_memo_id, title, file_path, mime_type, \n               size_bytes, duration_ms, sourceType, waveform_data, created_at \n        FROM audio_files \n        WHERE song_memo_id = ?\n        ORDER BY created_at DESC\n      ",[a])
+m=J.Qe(n,"        SELECT id, song_memo_id, title, file_path, mime_type, \n               size_bytes, duration_ms, source_type, waveform_data, created_at \n        FROM audio_files \n        WHERE song_memo_id = ?\n        ORDER BY created_at DESC\n      ",[a])
 k=m
 j=A.co(k).h("R<ai.E,az<i,@>>")
 k=A.a_(new A.R(k,new A.aco(),j),j.h("am.E"))
@@ -113281,7 +113281,7 @@ case 5:return A.v(null,r)
 case 1:return A.u(p.at(-1),r)}})
 return A.w($async$Bw,r)}}
 A.aco.prototype={
-$1(a){return A.a4(["id",a.j(0,"id"),"song_memo_id",a.j(0,"song_memo_id"),"title",a.j(0,"title"),"file_path",a.j(0,"file_path"),"mime_type",a.j(0,"mime_type"),"size_bytes",a.j(0,"size_bytes"),"duration_ms",a.j(0,"duration_ms"),"sourceType",a.j(0,"sourceType"),"waveform_data",a.j(0,"waveform_data"),"created_at",a.j(0,"created_at")],t.N,t.z)},
+$1(a){return A.a4(["id",a.j(0,"id"),"song_memo_id",a.j(0,"song_memo_id"),"title",a.j(0,"title"),"file_path",a.j(0,"file_path"),"mime_type",a.j(0,"mime_type"),"size_bytes",a.j(0,"size_bytes"),"duration_ms",a.j(0,"duration_ms"),"sourceType",a.j(0,"source_type"),"waveform_data",a.j(0,"waveform_data"),"created_at",a.j(0,"created_at")],t.N,t.z)},
 $S:736}
 A.awI.prototype={
 Ge(){var s=0,r=A.x(t.Cb),q,p=2,o=[],n=this,m,l,k,j,i,h
